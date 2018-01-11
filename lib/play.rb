@@ -34,5 +34,12 @@ def turn(board)
     turn(board)
   end
 end
-
 # Define your play method below
+def play(board)
+  turns = 0
+  until turns == 0 do
+    turn(board)
+    turns += 1
+  end
+end
+
